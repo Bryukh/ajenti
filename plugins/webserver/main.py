@@ -29,7 +29,14 @@ class WebServerPlugin(CategoryPlugin):
         self.on_init()
         
         status = UI.VContainer()
-        panel = UI.PluginPanel(status, title='Web Server', icon='/dl/sql/icon.png')
+        
+        for b in self.backends:
+            but = UI.Action(text=b.name)
+            but['icon'] = b.icon
+            but['id'] = 'server-%s' % b.name
+            status.append(but)
+        
+        panel = UI.PluginPanel(status, title='Web Server', icon='/dl/webserver/icon.png')
         
         panel.appendChild(self.get_default_ui())
 

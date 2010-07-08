@@ -6,6 +6,7 @@ class TestWebserver(Plugin):
     implements(apis.webserver.Server)
     
     name = 'Dummy'
+    icon = '/dl/webserver_test/icon.png'
                 
     # Contorlling server state
     def getState(self):
