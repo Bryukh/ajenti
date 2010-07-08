@@ -1,0 +1,5 @@
+pkg webserver-test
+desc Dummy mod for webserver
+dep mcrypt
+ver 0.1
+
