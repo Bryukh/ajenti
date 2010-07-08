@@ -28,6 +28,7 @@ class WebServerPlugin(CategoryPlugin):
     def get_ui(self):
         self.on_init()
         
+        status = UI.VContainer()
         panel = UI.PluginPanel(status, title='Web Server', icon='/dl/sql/icon.png')
         
         panel.appendChild(self.get_default_ui())
