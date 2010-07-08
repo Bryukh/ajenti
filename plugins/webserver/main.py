@@ -31,9 +31,8 @@ class WebServerPlugin(CategoryPlugin):
         status = UI.VContainer()
         
         for b in self.backends:
-            but = UI.Action(text=b.name)
-            but['icon'] = b.icon
-            but['id'] = 'server-%s' % b.name
+            but = UI.Action(text=b)
+            but['id'] = 'server-%s' % b
             status.append(but)
         
         panel = UI.PluginPanel(status, title='Web Server', icon='/dl/webserver/icon.png')
