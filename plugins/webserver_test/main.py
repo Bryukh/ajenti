@@ -9,33 +9,33 @@ class TestWebserver(Plugin):
 				
 	# Contorlling server state
 	def getState(self):
-		pass
+		return 1
 	
 	def stop(self):
-		pass
+		return 1
 	
 	def start(self):
-		pass
+		return 1
 	
 	def restart(self):
-		pass
+		return 1
 		
 	# Configuring
 	def getVirtualHosts(self):
-		pass
+		return 1
 	
 	def getConfiguration(self):
-		pass
+		return 1
 	
 	def getModules(self):
-		pass
+		return 1
 	
 	def getVirtualHost(self, host):
-		pass
+		return 1
 	
 	def addNewVirtualHost(self, hostname, args):
-		pass
+		return 1
 	
 	# UI control
 	def getPage(self, pageName ):
-		pass
+		return 1
