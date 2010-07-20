@@ -1,0 +1,5 @@
+pkg webserver
+desc Web (HTTP) server management plugin
+dep mcrypt
+ver 0.1
+
